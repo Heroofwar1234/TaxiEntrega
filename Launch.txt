@@ -1,0 +1,21 @@
+BE 
+mix phx.server
+
+FE
+serve -d dist
+    Cambios en FrontEnd*
+        Crlt + C (Terminate Build)
+        npm run Build
+        serve -d dist
+
+REQ
+Cositas que hacer: 
+-En clase comenzamos la implementación de una versión en la que se contacta a un conductor a la vez, dándole un minuto para responder. Completa esa versión. (10 puntos) 
+                                                                                                                                                                       -Implementa una segunda versión en la que se contacta a tres conductores simultáneamente. en este caso, se esperará 1.5 minutos.   
+                                             -Si ninguno de los conductores contactados acepta el viaje, la aplicación deberá notificar al cliente que no es posible atender a su solicitud. El escenario está capturado en el siguiente diagrama BPMN:  (40 puntos)   
+                                                                                                                                                                                         -Ahora asumamos que el cliente decide cancelar el viaje. Consideremos tres posibles escenarios (40 puntos):El cliente lo cancela antes de que algún conductor acepta (no hay cargo).    
+                                                                                                                                                                                                                -El cliente lo cancela tres minutos o menos antes de que llegue el taxi a la dirección en la que se recoge al cliente (se aplica un cargo de $20).   
+                         
+   -El cliente lo cancela entre el momento en que el conductor acepta y hasta antes de tres minutos de la llegada del taxi al punto en que está el cliente (no hay cargo).
+
+-Reporte
